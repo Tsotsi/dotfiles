@@ -203,10 +203,12 @@ symbol = " "
 
 [dotnet]
 disabled = false
-format = "[$symbol$version( 🎯 $tfm)]($style) "
-symbol = "•NET "
-style = "blue bold"
-heuristic = true
+#format = "[$symbol $version( \ue648 $tfm)]($style) "
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+#symbol = "•NET"
+symbol = "\ue648"
+style = "bg:color_blue"
+#heuristic = true
 
 
 [docker_context]
